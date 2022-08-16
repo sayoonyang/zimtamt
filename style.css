@@ -32,7 +32,10 @@ a.link{
   text-decoration : none;
 }
 
-a.link:hover{
+
+a.list{
+  color : var(--black);
+  text-decoration : none;
 }
 
 .nav-item{
@@ -318,6 +321,11 @@ footer{
   }
 
   .nav-info{
-    visibility : hidden !important;
+    display : none;
   }
+
+  .work-info{
+    display : none;
+  }
+
 }
