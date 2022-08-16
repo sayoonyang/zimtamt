@@ -318,6 +318,6 @@ footer{
   }
 
   .nav-info{
-    position : hidden;
+    visibility : hidden !important;
   }
 }
