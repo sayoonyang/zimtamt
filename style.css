@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 
-h1,h3,h5,p,a,label,small,form {
+h1,h2,h3,h5,p,a,label,small,form {
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -158,6 +158,10 @@ a.link:hover{
   border-top : 0.2rem solid var(--black);
 }
 
+.photo-container-b-0{
+  background-color : var(--black);
+}
+
 .recent-photo{
 }
 
@@ -182,6 +186,25 @@ a.link:hover{
   background-color : var(--white);
 }
 
+
+.works-list{
+  border-top : 0.2rem solid var(--black);
+}
+
+.works-list:hover{
+  cursor: pointer;
+  background-color : var(--black);
+  color : var(--white);
+}
+
+.navigation{
+  padding-top : 1.5rem;
+  padding-bottom : 1.5rem;
+}
+
+.nav-icon{
+
+}
 
 
 .marquee {
@@ -224,6 +247,19 @@ a.link:hover{
     100% { left: -100%; }
 }
 
+.modal-header{
+  border-bottom : none;
+}
+
+.modal-content{
+  border : 0.2rem solid var(--black);
+  background-color : var(--theme);
+}
+
+.modal-footer{
+  border : none;
+}
+
 
 .about{
   background-color : var(--theme);
@@ -234,6 +270,9 @@ a.link:hover{
   padding-bottom : 1rem;
 }
 
+#about-photo{
+  border-radius : 500px;
+}
 
 .contact{
   border-top : 0.2rem solid var(--black);
@@ -276,5 +315,9 @@ footer{
 
   .marquee-container{
     animation: marquee 8s linear infinite;
+  }
+
+  .nav-info{
+    position : none;
   }
 }
