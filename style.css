@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+h1,h3,h5,p,a,label,small,form {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+:root{
+  --main: #000;
+  --theme : #EA7551;
+  --black: #000;
+  --white: #fff;
+  --blue : #3772FF;
+}
+
+a.navbar-brand{
+  color : var(--main);
+}
+
+a.nav-link {
+  color : var(--main);
+}
+
+a.nav-link:hover{
+  color : var(--main);
+  text-decoration : underline;
+}
+
+a.link{
+  color : var(--white);
+  text-decoration : none;
+}
+
+a.link:hover{
+}
+
+.nav-item{
+  align-content : left;
+}
+
+.nav-info{
+  position : absolute;
+  text-align : right;
+  right : 4rem;
+  top : 1.5rem;
+}
+
+
+.navbar-expand-lg{
+  border-bottom : 0.2rem solid var(--main);
+}
+
+.navbar-toggler{
+  border : none;
+  outline : none;
+}
+
+.navbar-toggler:focus{
+  outline : none;
+  box-shadow : none;
+}
+
+#navbarToggler{
+  margin-top : 1rem;
+}
+
+.fa-bars{
+  color : var(--black);
+}
+
+.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 8rem;
+  padding : 0.7rem 2rem 0.7rem 0.25rem;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.svg-content {
+	display: inline-block;
+	position: relative;
+}
+
+.Vector_logo_ani{
+  animation: logomove .3s ease infinite;
+  transform-origin : top center;
+}
+
+.navbar-brand:hover .Vector_logo_ani{
+    animation-play-state: paused;
+}
+
+.navbar-brand:hover .Vector_2{
+    fill: var(--black);
+}
+
+.Vector_2{
+  fill: var(--theme);
+}
+
+.Vector_1,.Vector_4 {animation-delay: .3s}
+.Vector_3 {animation-delay : 1s}
+.Vector_5, .Vector_7 {animation-delay : 2s}
+.Vector_6, .Vector_8 {animation-delay: 1.3s}
+.Vector_2 {animation-delay : 1.6s}
+
+@keyframes logomove{
+  0%   {transform: scale(1, 1)}
+  10%  {transform: scale(1, 1)}
+  50%  {transform: scale(1, 1.1)}
+  90%  {transform: scale(1, 1)}
+  100% {transform: scale(1, 1)}
+}
+
+.container-fluid.top{
+  margin-top : 6rem;
+}
+
+
+.recent{
+}
+
+
+
+.btn-primary {
+  border-radius : 100px;
+  border : 0.2rem solid var(--black);
+  background : var(--black);
+}
+
+.btn-primary:hover {
+  background : var(--white);
+  border : 0.2rem solid var(--black);
+  color : var(--black);
+}
+
+.btn-primary:focus{
+  background : var(--white);
+  outline : none;
+  box-shadow : none;
+  border : 0.2rem solid var(--black);
+  color : var(--black);
+}
+
+.card-text.button-text{
+  margin : 0 0.2rem 0 0.2rem;
+}
+
+.card{
+  border-radius : 0px;
+  border : 0rem solid var(--black);
+}
+
+.photo-container{
+  background-color : var(--black);
+  border-top : 0.2rem solid var(--black);
+}
+
+.recent-photo{
+}
+
+.recent-photo:hover {
+  cursor: pointer;
+  opacity: 0.3;
+  transition: .3s ease;
+}
+
+
+.card-img-top{
+  border-radius : 0px;
+}
+
+.card-body.gallery{
+  position : absolute;
+  bottom : 0;
+  border-top : 0.2rem solid var(--black);
+  border-left : 0.2rem solid var(--black);
+  border-right : 0.2rem solid var(--black);
+  border-bottom : none;
+  background-color : var(--white);
+}
+
+
+
+.marquee {
+    font-size: 3rem;
+    color: var(--black);
+    height: 4rem;
+    overflow: hidden;
+    background-color: var(--white);
+    position: relative;
+    border-top : 0.2rem solid var(--black);
+    border-bottom : 0.2rem solid var(--black);
+    padding-bottom : 5rem;
+}
+/* nested div inside the container */
+.marquee-container {
+    display: block;
+    width: 200%;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee-container:hover{
+  animation-play-state: paused;
+}
+
+.marquee:hover{
+  background-color : var(--black);
+  color : var(--white);
+  cursor: pointer;
+}
+/* span with text */
+.marquee span {
+    float: center;
+    width: 100%;
+}
+/* keyframe */
+@keyframes marquee {
+    0% { left: 0%; }
+    100% { left: -100%; }
+}
+
+
+.about{
+  background-color : var(--theme);
+}
+
+.about-text{
+  padding-top : 1rem;
+  padding-bottom : 1rem;
+}
+
+
+.contact{
+  border-top : 0.2rem solid var(--black);
+  background-color : var(--blue);
+}
+
+.contact-text{
+  padding-top : 1rem;
+  padding-bottom : 1rem;
+}
+
+.form-control{
+ border-radius : 0px;
+ border : 0.2rem solid var(--black);
+}
+
+.form-control:focus {
+  outline : none;
+  box-shadow : none;
+}
+
+
+footer{
+  background-color : var(--black);
+}
+
+.footer-info{
+  padding-top : 1rem;
+  color : var(--white);
+  padding-bottom : 1rem;
+}
+
+
+@media (max-width: 575.98px) {
+  .marquee {
+    font-size : 2rem;
+    height : 1rem;
+    padding-bottom : 3.3rem;
+  }
+
+  .marquee-container{
+    animation: marquee 8s linear infinite;
+  }
+}
