@@ -189,9 +189,19 @@ a.list{
   background-color : var(--white);
 }
 
+h5.card-title{
+  width : 14rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.work-info{
+  border-bottom : 0.2rem solid var(--black);
+}
 
 .works-list{
-  border-top : 0.2rem solid var(--black);
+  border-bottom : 0.2rem solid var(--black);
 }
 
 .works-list:hover{
@@ -268,6 +278,11 @@ a.list{
   background-color : var(--theme);
 }
 
+hr.about-hr{
+  display : none;
+}
+
+
 .about-text{
   padding-top : 1rem;
   padding-bottom : 1rem;
@@ -310,6 +325,11 @@ footer{
 
 
 @media (max-width: 575.98px) {
+
+  h1.section-title{
+    text-decoration : underline;
+  }
+
   .marquee {
     font-size : 2rem;
     height : 1rem;
@@ -320,12 +340,14 @@ footer{
     animation: marquee 8s linear infinite;
   }
 
-  .nav-info{
+  .work-info, .work-year, .nav-info, .col#last{
     display : none;
   }
 
-  .work-info{
-    display : none;
+  hr.about-hr{
+    display : block;
+    border-top: 0.2rem dotted var(--black);
+    width : 97%;
   }
 
 }
