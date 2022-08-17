@@ -210,6 +210,10 @@ h5.card-title{
   color : var(--white);
 }
 
+.work-item{
+  padding-top : 2rem;
+}
+
 .navigation{
   padding-top : 1.5rem;
   padding-bottom : 1.5rem;
