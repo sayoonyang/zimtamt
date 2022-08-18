@@ -232,12 +232,12 @@ h5.card-title{
   height: 100%;
 }
 
-.external{
+a.external{
   font-size : 0.7rem;
   color : var(--bs-body-color-rgb);
 }
 
-.external:hover{
+a.external:hover{
   color : var(--theme);
 }
 
