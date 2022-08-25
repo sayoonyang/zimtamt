@@ -232,6 +232,15 @@ h5.card-title{
   height: 100%;
 }
 
+a.external{
+  font-size : 0.7rem;
+  color : var(--bs-body-color-rgb);
+}
+
+a.external:hover{
+  color : var(--theme);
+}
+
 .navigation{
   padding-top : 1.5rem;
   padding-bottom : 1.5rem;
