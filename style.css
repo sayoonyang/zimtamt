@@ -355,10 +355,14 @@ footer{
 }
 
 
-@media (max-width: 575.98px) {
+@media (max-width: 767px) {
 
   h1.section-title{
     text-decoration : underline;
+  }
+
+  .card-body.gallery{
+    display : none;
   }
 
   .marquee {
