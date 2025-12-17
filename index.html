@@ -251,7 +251,7 @@
       </div>
       <div class="col-md">
         <section class="email-me">
-          <form class="gform" action="https://script.google.com/macros/s/AKfycbwklIC0X6x73nF5RHvEBBI5llL9PmXKF-QBrdO-7k9dq1VgIxhudUFX1mKbLyWix0up/exec" method="POST" data-email="yang.sayoon@gmail.com">
+          <form class="gform" action="https://script.google.com/macros/s/AKfycbwklIC0X6x73nF5RHvEBBI5llL9PmXKF-QBrdO-7k9dq1VgIxhudUFX1mKbLyWix0up/exec" method="POST" target="hidden_iframe">
 <div class="form-group">
             <fieldset>
               <div class="box-input">
@@ -270,6 +270,8 @@
               </div>
               <br>
               <div class="box-input">
+
+                <iframe name="hidden_iframe" style="display:none;"></iframe>
 
                   <div style="display:none" class="thankyou_message">
                      <span class="badge text-bg-light">Thanks! Your message is now on the way! <i class="fa fa-paper-plane"></i></span>
@@ -301,7 +303,19 @@
     </div>
   </footer>
 
-<script data-cfasync="false" type="text/javascript" src="scripts/form-submission-handler.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".gform");
+    const thankYou = form.querySelector(".thankyou_message");
+
+    form.addEventListener("submit", function () {
+      setTimeout(function () {
+        thankYou.style.display = "block";
+        form.reset();
+      }, 400);
+    });
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
